@@ -10,7 +10,7 @@ class UserForm
     {
         return $schema
             ->components([
-                \Filament\Forms\Components\HIdden::make('id'),
+                \Filament\Forms\Components\Hidden::make('id'),
                 \Filament\Forms\Components\TextInput::make('email')
             ]);
     }
