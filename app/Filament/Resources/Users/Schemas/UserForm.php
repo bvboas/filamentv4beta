@@ -13,7 +13,7 @@ class UserForm
 
         return $schema
             ->components([
-                    TextInput::make('name')->visible($schema->getRecord()),
+                    TextInput::make('name')->visible(fn() => $schema->getRecord()),
                     TextInput::make('email'),
                 ]
             );
